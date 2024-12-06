@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub</title>
+    <!-- Bootstrap  e CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style-index.css">
+    <!-- fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="Icon" href="img/icon.jpg">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">GitHub Guide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#introducao">Introdução</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#create-repo">Criar Repositório</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#upload-files">Postar Arquivos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Introdução -->
+    <div id="introducao">
+        <div class="text-white text-center py-5"
+            style="background-image: url('img/Banner-principal.jpg'); background-size: cover; background-position: center;">
+            <div class="overlay"></div>
+            <div class="container bg-header">
+                <h1 class="display-4"><strong>Guia do Git e GitHub</strong></h1>
+                <p class="lead"><strong>Saiba os principais comando do Git e GitHub além de muito mais!</strong></p>
+                <a href="#comandos" class="btn btn-light btn-lg">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Principais Funcionalidades</h2>
+
+        <!-- Cards -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Controle de Versão</h5>
+                        <p class="card-text">O Git permite gerenciar versões do código, facilitando o rastreamento de
+                            alterações.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabalho em Equipe</h5>
+                        <p class="card-text">Com o GitHub, é possível colaborar com outros desenvolvedores em projetos
+                            de forma organizada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Deploy Fácil</h5>
+                        <p class="card-text">Use o GitHub Pages para hospedar sites estáticos diretamente do
+                            repositório.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- comandos -->
+        <h2 class="text-center mt-5" id="comandos">Comandos Importantes do Git</h2>
+        <div class="accordion mt-3" id="gitCommands">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        git init
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#gitCommands">
+                    <div class="accordion-body">
+                        Inicializa um repositório Git no diretório atual.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        git add
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#gitCommands">
+                    <div class="accordion-body">
+                        Adiciona arquivos ao índice para o próximo commit.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        git commit
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#gitCommands">
+                    <div class="accordion-body">
+                        Cria um commit com as alterações adicionadas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Criar Repositório -->
+    <div id="create-repo" class="content-section">
+        <h2 class="section-title">Como Criar um Repositório no GitHub</h2>
+        <div class="row">
+            <div class="col-md-6 img-repositorio">
+                <img src="img/Banner.jpg" alt="GitHub">
+            </div>
+            <div class="col-md-6 ">
+                <ol>
+                    <li><strong>Acesse o GitHub:</strong> Faça login na sua conta em <a href="https://github.com"
+                            target="_blank" class="link-comandos">github.com</a>.</li>
+                    <li><strong>Crie um Novo Repositório:</strong> Clique no botão verde <strong>"New"</strong> no topo
+                        da página inicial.</li>
+                    <li><strong>Preencha as Informações:</strong>
+                        <ul>
+                            <li><strong>Nome do Repositório:</strong> Escolha um nome descritivo para o projeto.</li>
+                            <li><strong>Descrição:</strong> Insira detalhes sobre o objetivo do repositório (opcional).
+                            </li>
+                            <li><strong>Visibilidade:</strong> Escolha entre <strong>Público</strong> ou
+                                <strong>Privado</strong>.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Adicione um README:</strong> Marque a opção <strong>"Add a README file"</strong> para
+                        incluir um arquivo inicial.</li>
+                    <li><strong>Finalize:</strong> Clique no botão verde <strong>"Create Repository"</strong>.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Postar Arquivos -->
+    <div id="upload-files" class="content-section">
+        <h2 class="section-title">Como Postar Arquivos no Repositório</h2>
+        <ol>
+            <li><strong>Clone o repositório:</strong> Use o comando abaixo para clonar o repositório criado:
+                <pre><code>git clone https://github.com/seu-usuario/nome-repositorio.git</code></pre>
+            </li>
+            <li><strong>Adicione os arquivos:</strong> Copie os arquivos para a pasta do repositório clonado.</li>
+            <li><strong>Adicione os arquivos ao GIT:</strong>
+                <pre><code>git add .</code></pre>
+            </li>
+            <li><strong>Crie um commit:</strong> Salve as alterações localmente com uma mensagem descritiva:
+                <pre><code>git commit -m "Primeiro commit"</code></pre>
+            </li>
+            <li><strong>Envie os arquivos para o GitHub:</strong> Use o comando:
+                <pre><code>git push origin main</code></pre>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container text-center py-3">
+            <p>&copy; 2024 Guia Git e GitHub - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
