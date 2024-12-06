@@ -178,20 +178,33 @@
     <div id="upload-files" class="content-section">
         <h2 class="section-title">Como Postar Arquivos no Repositório</h2>
         <ol>
-            <li><strong>Clone o repositório:</strong> Use o comando abaixo para clonar o repositório criado:
-                <pre><code>git clone https://github.com/seu-usuario/nome-repositorio.git</code></pre>
+            <li><strong>Inicializar o GIT no projeto:</strong> Utilizando o Prompt de Comando ou terminal do Vscode você
+                deve digitar o comando abaixo:
+                <pre><code>git init</code></pre>
+                <p>Lembrando que você deve abrir o diretório onde seu projeto está salvo localmente para começar a
+                    postar.</p>
             </li>
-            <li><strong>Adicione os arquivos:</strong> Copie os arquivos para a pasta do repositório clonado.</li>
-            <li><strong>Adicione os arquivos ao GIT:</strong>
+            <li><strong>Adicionar os arquivos ao repositório:</strong>
                 <pre><code>git add .</code></pre>
             </li>
-            <li><strong>Crie um commit:</strong> Salve as alterações localmente com uma mensagem descritiva:
+            <li><strong>Criar o primeiro commit:</strong>
                 <pre><code>git commit -m "Primeiro commit"</code></pre>
             </li>
-            <li><strong>Envie os arquivos para o GitHub:</strong> Use o comando:
-                <pre><code>git push origin main</code></pre>
+            <li><strong>criar o arquivo main:</strong> O comando <strong>git branch -M main</strong> é frequentemente
+                usado para renomear
+                a branch padrão (geralmente chamada de master) para main, pois muitos projetos atualmente adotam main
+                como padrão.
+                <pre><code>git branch -M main</code></pre>
+            </li>
+            <li><strong>Conectar o repositório local ao GitHub:</strong>
+                <pre><code>git remote add origin *URL do seu repositório do GitHub*</code></pre>
+            </li>
+            <li><strong>Enviar os arquivos para o GitHub:</strong>
+                <pre><code>git push -u origin main</code></pre>
             </li>
         </ol>
+        <p>Pronto, agora basta verificar se todos os arquivos foram postados corretamente no seu repositório do GitHub.
+        </p>
     </div>
 
     <!-- Footer -->
